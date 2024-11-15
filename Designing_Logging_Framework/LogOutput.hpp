@@ -28,7 +28,7 @@ public:
 class FileOutput : public LogOutput {
 private:
     std::ofstream outFile;
-    // std::mutex fileMutex;
+    std::mutex fileMutex;
 
 public:
     FileOutput(const std::string& fileName) {
@@ -39,7 +39,7 @@ public:
     }
 
     void log(const LogMessage& message) override {
-        // std::lock_guard<std::mutex> lock(fileMutex);
+        std::lock_guard<std::mutex> lock(fileMutex);
         outFile << message.formatMessage() << std::endl;
     }
 
