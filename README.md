@@ -1,2 +1,2 @@
-# System-Design
-I'll be using to futrher track of LLD problem solution.
+# Low Level System-Design
+This System Design repository contains resources to learn Low Level Design (LLD). 
