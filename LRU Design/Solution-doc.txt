@@ -1,0 +1,23 @@
+The basic idea behind implementing an  LRU (Least Recently Used)  
+cache using a  key-value  pair approach is to manage  element 
+access  and  removal efficiently  through a combination of a  
+doubly linked list  and a  hash map. 
+
+hashmap <key,<pointer of dll node>>
+dll_node -> [key,value,prev_ptr,next_ptr]
+
+
+
+Advantages of LRU cache:
+    Accessing data is done in O(1) time
+    Updating a key-value pair also takes O(1) time.
+    Removing the least recently used item is performed in O(1) time.
+    LRU plays a crucial role in page replacement strategies to minimize page faults .
+
+    
+Disadvantages of LRU cache:
+    It requires large cache size to increase efficiency.
+    It requires additional Data Structure to be implemented.
+    In LRU, error detection is difficult as compared to other algorithms.
+    It has limited acceptability.
+
