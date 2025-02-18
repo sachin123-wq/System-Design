@@ -1,0 +1,32 @@
+/*
+1.  Card(ATM card) with                      
+
+                                            => Fields(card number and PIN)
+
+2.  Account class(Represents a bank account) 
+
+                                            => Fields(Bank Account Number, Balance)
+                                            => Methods(Debit and Credit the Balance)
+
+3.  Transaction class(Abstract base class for different types of transactions) 
+
+                                            => Concrete class(WithdrawalTransaction and DepositTransaction classes)
+
+4.  BankingService class(Manages the bank accounts and processes transactions)
+
+                                            => It uses a thread-safe ConcurrentHashMap to store and retrieve account information.
+
+5.  CashDispenser class(Represents the ATM's cash dispenser and handles the dispensing of cash) 
+            
+                                            => It uses synchronization to ensure thread safety when dispensing cash.
+
+6.  ATM class(Serves as the main interface for ATM operations) 
+                                            
+                                            => It interacts with the BankingService and CashDispenser to perform 
+                                            => user authentication, balance inquiry, cash withdrawal, and cash deposit.
+
+7. The ATMDriver class(Demonstrates the usage of the ATM system)
+            
+                                            => By creating sample accounts and performing ATM operations.
+
+*/
